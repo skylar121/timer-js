@@ -1,0 +1,181 @@
+@charset "utf-8";
+
+/* reset css */
+
+*,*::after, *:before, html, body {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+/* import */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+* { 
+font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+}
+
+#app {
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(96.74% 276.79% at 3.59% 5.28%, #F0F4FF 0%, #A5B6EE 100%);
+}
+
+.ir {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .logo-img {
+    background-image: url(./images/weniv-logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 244px;
+    height: 48px;
+    margin-top: 72px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    height: 360px;
+    background: linear-gradient(144.07deg, #5572BB 2.13%, #374B7C 102.97%);
+    box-shadow: 20px 20px 60px 10px rgba(55, 75, 124, 0.4);
+    border-radius: 16px;
+    margin: 60px 0;
+}
+
+.timer .h2 {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.timer .line {
+    display: inline-block;
+    background-image: url(./images/timer-line.png);
+    background-position: center;
+    background-repeat: no-repeat;    
+    width: 312px;
+    height: 2px;
+    margin: 23px 0 33px;
+}
+
+.timer .timer-detail {
+    display: flex;
+    justify-content: space-around;
+    width: 310px;
+    margin-bottom: 4px;
+}
+
+.timer-detail .timer-counter {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #A5B6EE;
+}
+
+.timer-detail .timer-counter:nth-child(3) {
+    margin-right: 0;
+}
+
+.timer .wrapper-counterbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-counterbox .timer-counterbox {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(314.28deg, #304577 0%, #4C65A0 83%);
+    border: 1px solid #354971;
+    border-radius: 4px;
+}
+
+.wrapper-counterbox .timer-dots {
+    display: inline-block;
+    background-image: url(./images/dot.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 6px;
+    height: 26px;
+    margin: 26px 8px;
+    vertical-align: top;
+}
+
+.wrapper-btns {
+    margin-top: 40px;
+}
+
+.timer-btn {
+    display: inline-block;    
+    width: 112px;
+    height: 48px;
+    background: #324577;
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.05);
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #617199;
+    cursor: pointer;
+}
+
+.timer-btn.start-disabled::before{
+    background-image: url(./images/icon-start-disabled.png);
+    width: 17px;
+    height: 17px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.timer-btn.reset-disabled::before{
+    background-image: url(./images/icon-reset-disabled.png);
+    width: 17px;
+    height: 17px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .footer-txt {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}

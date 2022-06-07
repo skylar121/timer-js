@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>위니브 타이머</title>
+    <link rel="stylesheet" href="./src/style.css">
+
+</head>
+
+<body>
+    <div id="app">
+        <header class="header">
+            <h1 class="ir logo-txt">위니브</h1>
+            <div class="logo-img"></div>
+        </header>
+        <main class="main">
+            <article class="timer">
+                <h2 class="h2">TIMER</h2>
+                <div class="line"></div>
+                <div class="timer-detail">
+                    <span class="timer-counter">HRS</span>
+                    <span class="timer-counter">MIN</span>
+                    <span class="timer-counter">SEC</span>
+                </div>
+                <div class="wrapper-counterbox">
+                    <input type="number" class="timer-counterbox">
+                    <div class="timer-dots"></div>
+                    <input type="number" class="timer-counterbox">
+                    <div class="timer-dots"></div>
+                    <input type="number" class="timer-counterbox">
+                </div>
+                <div class="wrapper-btns">
+                    <button type="button" class="timer-btn start-disabled">START</button>
+                    <button type="button" class="timer-btn reset">RESET</button>
+                </div>
+            </article>
+        </main>
+        <footer class="footer">
+            <p class="footer-txt">ⓒ WENIV Corp.</p>
+        </footer>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
